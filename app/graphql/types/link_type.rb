@@ -5,5 +5,7 @@ module Types
     field :description, String, null: false
     # "method" option remaps field to an attribute of Link model
     field :posted_by, UserType, null: true, method: :user
+
+    field :votes, [VoteType], null: false
   end
 end
